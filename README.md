@@ -1,8 +1,9 @@
 # katoto_qrcode
+还在开发中。。    
 基于qrcode的npm包
 
 
-## 内部基于qrcode
+### 内部基于qrcode
 [qrcode.js](https://github.com/davidshimjs/qrcodejs/)
 
 ```
