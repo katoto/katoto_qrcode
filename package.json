@@ -1,6 +1,6 @@
 {
   "name": "katoto_qrcode",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "基于qrcode的npm包",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/katoto/katoto_qrcode.git"
   },
-  "keywords": ["qrcode", "katoto-qrcode", "components", "plugin"],
+  "keywords": [
+    "qrcode",
+    "katoto-qrcode",
+    "components",
+    "plugin"
+  ],
   "author": "katoto",
   "license": "ISC",
   "bugs": {
@@ -21,5 +26,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "dependencies": {
+    "qrcodejs2": "0.0.2"
+  }
 }

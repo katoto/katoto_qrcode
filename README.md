@@ -1,7 +1,7 @@
 # katoto_qrcode
-还在开发中。。    
-基于qrcode的npm包
+基于qrcodejs2的npm包
 
+readme.md 待更新
 
 ### 内部基于qrcode
 [qrcode.js](https://github.com/davidshimjs/qrcodejs/)
