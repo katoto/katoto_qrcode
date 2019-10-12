@@ -41,7 +41,7 @@ codeMsg | String \| Array | 123 | 二维码数据，如果传入的是数组，�
 scanMargin | String \| Number | 20 | 二维码边角的间距, 写0就不展示边角样式
 
 ### 效果图
-![效果图](https://raw.githubusercontent.com/katoto/katoto_qrcode/master/demopage/img.png)
+![效果图](https://raw.githubusercontent.com/katoto/katoto_qrcode/master/img.png)
 
 ### 参考
 [qrcode.js](https://github.com/davidshimjs/qrcodejs/)
