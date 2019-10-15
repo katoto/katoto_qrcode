@@ -4,21 +4,23 @@
     <div class="qrCode qrCodeLine" v-for="(item, index) in codeMsg" :key="index" 
       :style="{'width': parseInt(qrWidth) + parseInt(scanMargin) + 'px', 'height': parseInt(qrHeight) + parseInt(scanMargin) + 'px'}"></div>
   </template>
-  <div v-else class="qrCode"></div>
+  <div v-else class="qrCode qrCodeLine"
+    :style="{'width': parseInt(qrWidth) + parseInt(scanMargin) + 'px', 'height': parseInt(qrHeight) + parseInt(scanMargin) + 'px'}"
+  ></div>
 </div>
 </template>
 <script>
 import QRCode from 'qrcodejs2'
 
 export default {
-  name: 'katoto-scroll',
+  name: 'katoto-qrcode',
   props: {
     qrWidth:{
-      type: String | Number,
+      type: [String , Number],
       default: "200"
     },
     qrHeight:{
-      type: String | Number,
+      type: [String , Number],
       default: "200"
     },
     colorDark:{
@@ -30,11 +32,11 @@ export default {
       default: "#ffffff"
     },
     codeMsg: {
-      type: String | Array,
+      type: [String , Array],
       default: "123"
     },
     scanMargin: {
-      type: String | Number,
+      type: [String , Number],
       default: "20"
     }
   },
