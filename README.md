@@ -1,24 +1,24 @@
-# katoto_qrcode
+# @katoto/qrcode
 基于qrcodejs的npm包，进行了简易封装，支持多个二维码展示。
 
 ###  使用方法
 + 安装
 ```
-npm install --save katoto_qrcode
+npm install --save @katoto/qrcode
 ```
 + 使用 components方式引入
 
 ```
 <template>
   <div id="app">
-    <katotoQrcode :qrWidth="200" :codeMsg="codeMsg"> </katotoQrcode>
+    <katoto-qrcode :qrWidth="200" :codeMsg="codeMsg"> </katoto-qrcode>
   </div>
 </template>
 <script>
-import katotoQrcode from 'katoto_qrcode'
+import KatotoQrcode from '@katoto/qrcode'
 export default {
   components: {
-    katotoQrcode
+    KatotoQrcode
   },
   data(){
     return{
@@ -41,10 +41,7 @@ codeMsg | String \| Array | 123 | 二维码数据，如果传入的是数组，�
 scanMargin | String \| Number | 20 | 二维码边角的间距, 写0就不展示边角样式
 
 ### 效果图
-![效果图](https://raw.githubusercontent.com/katoto/katoto_qrcode/master/img.png)
+![效果图](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9385f268928d4fe08e050927ff889b92~tplv-k3u1fbpfcp-watermark.image)
 
 ### 参考
 [qrcode.js](https://github.com/davidshimjs/qrcodejs/)
-
-
-### demopage是目录测试目录
